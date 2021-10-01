@@ -1,0 +1,122 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Strucid1 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local StrucidScript2 = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Frame.BorderColor3 = Color3.fromRGB(34, 255, 0)
+Frame.Position = UDim2.new(0.348939925, 0, 0.314465404, 0)
+Frame.Size = UDim2.new(0, 340, 0, 263)
+
+Strucid1.Name = "Strucid 1"
+Strucid1.Parent = Frame
+Strucid1.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Strucid1.BorderColor3 = Color3.fromRGB(0, 255, 29)
+Strucid1.Position = UDim2.new(0.049447991, 0, 0.235741451, 0)
+Strucid1.Size = UDim2.new(0, 144, 0, 139)
+Strucid1.Font = Enum.Font.SourceSans
+Strucid1.Text = "Strucid 1"
+Strucid1.TextColor3 = Color3.fromRGB(38, 255, 0)
+Strucid1.TextSize = 14.000
+Strucid1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+end)
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(62, 143, 0)
+TextLabel.Position = UDim2.new(-0.00303887064, 0, -0.00235310243, 0)
+TextLabel.Size = UDim2.new(0, 342, 0, 27)
+TextLabel.Font = Enum.Font.Merriweather
+TextLabel.LineHeight = 0.520
+TextLabel.Text = "Made by Airsoft#6666 and Cr4cky4#0630\\n"
+TextLabel.TextColor3 = Color3.fromRGB(2, 12, 200)
+TextLabel.TextSize = 14.000
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(62, 143, 0)
+TextButton.BorderColor3 = Color3.fromRGB(59, 255, 0)
+TextButton.Position = UDim2.new(0.939816117, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 20, 0, 11)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(62, 143, 0)
+TextLabel_2.Position = UDim2.new(0, 0, 0.931558907, 0)
+TextLabel_2.Size = UDim2.new(0, 339, 0, 18)
+TextLabel_2.Font = Enum.Font.Nunito
+TextLabel_2.Text = "Sub to SoftVortex on Youtube and join my discord dsc.gg/SoftVortex"
+TextLabel_2.TextColor3 = Color3.fromRGB(2, 12, 200)
+TextLabel_2.TextSize = 14.000
+
+StrucidScript2.Name = "Strucid Script 2"
+StrucidScript2.Parent = Frame
+StrucidScript2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+StrucidScript2.BorderColor3 = Color3.fromRGB(0, 255, 29)
+StrucidScript2.Position = UDim2.new(0.534742117, 0, 0.235741451, 0)
+StrucidScript2.Size = UDim2.new(0, 144, 0, 139)
+StrucidScript2.Font = Enum.Font.SourceSans
+StrucidScript2.Text = "Strucid 2"
+StrucidScript2.TextColor3 = Color3.fromRGB(38, 255, 0)
+StrucidScript2.TextSize = 14.000
+StrucidScript2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+end)
+TextButton_2.Parent = ScreenGui
+TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 255, 17)
+TextButton_2.Position = UDim2.new(0, 0, 0.727043986, 0)
+TextButton_2.Size = UDim2.new(0, 30, 0, 13)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Open"
+TextButton_2.TextColor3 = Color3.fromRGB(12, 255, 0)
+TextButton_2.TextSize = 14.000
+
+-- Scripts:
+
+local function YFDF_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local Frame = script.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+	
+end
+coroutine.wrap(YFDF_fake_script)()
+local function WBJB_fake_script() -- ScreenGui.Script 
+	local script = Instance.new('Script', ScreenGui)
+
+	frame = script.Parent.Frame -- Take out {}s, and put name of frame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(WBJB_fake_script)()
+local function TJKKPJ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local Frame = script.Parent.Parent.Frame
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = true
+	end)
+	
+end
+coroutine.wrap(TJKKPJ_fake_script)()
